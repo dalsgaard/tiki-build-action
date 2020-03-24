@@ -1,0 +1,5 @@
+name: "Demo Action"
+description: "A demo action"
+runs:
+  using: "node12"
+  main: "index.js"
