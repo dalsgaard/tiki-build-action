@@ -1,5 +1,5 @@
-name: "Demo Action"
-description: "A demo action"
+name: 'Demo Action'
+description: 'A demo action'
 runs:
-  using: "node12"
-  main: "index.js"
+  using: 'node12'
+  main: 'dist/index.js'
