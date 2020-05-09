@@ -1,9 +1,12 @@
-const fs = require('fs');
 const core = require('@actions/core');
+const client = require('tiki-client');
 
-try {
-  const data = fs.readFileSync('foo.json', { encoding: 'utf8' });
-  console.log(data);
-} catch (error) {
-  core.setFailed(error.message);
-}
+const url = 'https://tiki-builder.dalsgaard.now.sh/api';
+
+(async () => {
+  try {
+    await client.build(url);
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+})();
