@@ -1,5 +1,5 @@
 {
-  "name": "demo-action",
+  "name": "tiki-build-action",
   "version": "1.3.0",
   "description": "",
   "main": "index.js",
