@@ -1,6 +1,6 @@
 {
   "name": "demo-action",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dalsgaard/demo-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "tiki-client": "^0.2.0"
+    "tiki-client": "^0.3.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.1"
