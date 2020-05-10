@@ -5,7 +5,8 @@ const url = 'https://tiki-builder.dalsgaard.now.sh/api';
 
 (async () => {
   try {
-    await client.build(url);
+    const name = core.getInput('name');
+    await client.build(name, url);
   } catch (error) {
     core.setFailed(error.message);
   }

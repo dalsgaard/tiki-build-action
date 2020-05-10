@@ -1,5 +1,9 @@
 name: 'Demo Action'
 description: 'A demo action'
+inputs:
+  name:
+    description: 'Repository name'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
