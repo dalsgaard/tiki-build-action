@@ -5,7 +5,8 @@ const url = 'https://tiki-builder.dalsgaard.now.sh/api';
 
 (async () => {
   try {
-    const name = core.getInput('name');
+    const fullName = core.getInput('name');
+    const name = fullName.split('/').pop();
     await client.build(name, url);
   } catch (error) {
     core.setFailed(error.message);
