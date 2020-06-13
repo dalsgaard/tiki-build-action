@@ -1,27 +1,27 @@
 {
   "name": "tiki-build-action",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "ncc build index.js -o dist -m"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dalsgaard/demo-action.git"
+    "url": "git+https://github.com/dalsgaard/tiki-build-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dalsgaard/demo-action/issues"
+    "url": "https://github.com/dalsgaard/tiki-build-action/issues"
   },
-  "homepage": "https://github.com/dalsgaard/demo-action#readme",
+  "homepage": "https://github.com/dalsgaard/tiki-build-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
-    "tiki-client": "^0.3.1"
+    "@actions/core": "^1.2.3"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.1"
+    "@zeit/ncc": "^0.22.1",
+    "tiki-client": "^0.4.0"
   }
 }
